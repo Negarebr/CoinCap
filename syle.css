@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #b5c99a;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #97a97c;
+    color: white;
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 90px;
+}
+
+.up {
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.info {
+    background-color: #87986a;
+    color: black;
+    font-weight: bold;
+    width: 49.5%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.title, .creator {
+    margin-left: 20px;
+    font-size: 30px;
+}   
+
+.popular {
+    background-color: #87986a;
+    color: black;
+    width: 49.5%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.popular h4 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.popularcoins {
+    font-size: 30px;
+}
+
+.prow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.p {
+    font-size: 25px;
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.p:hover {    
+    background-color: #718355;
+    color: #d8e0cc;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px #39422c;
+}
+
+.down {
+    background-color: #718355;
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.cmd {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.market-title h4 {
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.search {
+    margin: 0;
+}
+
+.search-text p {
+    font-size: 30px;
+    margin: 0 0 0 50px;
+    width: 80%;
+}
+
+.search-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.input {
+    width: 55%;
+    height: 40px;
+    margin: 0 0 0 30px;
+    border-radius: 10px;
+    border: 1px solid #39422c;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.submit {
+    width: 100px;
+    height: 40px;
+    margin: 0 0 0 15px;
+    border-radius: 10px;
+    border: 1px solid #39422c;
+    font-size: 20px;
+    background-color: #39422c;
+    color: #d8e0cc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit:hover {
+    background-color: #97a97c;
+    color: #39422c;
+}
+
+.market {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px 0 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.m {
+    width: 100%;
+    font-size: 20px;
+    border-spacing: 0 20px;
+    margin-left: 20px;
+}
+
+tr {
+    margin-bottom: 10px;
+}
+
+.explore {
+    border-radius: 10px;
+    background-color: #97a97c;
+    color: #39422c;
+    font-size: 20px;
+    cursor: pointer;
+    width: 110px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.explore:hover {
+    background-color: #39422c;
+    color: #d8e0cc;
+}
+
+a {
+    text-decoration: none;
+    color: #39422c;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #d8e0cc
+}
+
+.prow a {
+    color: black;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .up, .down {
+        flex-direction: column;
+    }
+    
+    .info, .popular {
+        width: 100%;
+    }
+
+    .market-title h4 {
+        margin-left: 20px;
+        font-size: 40px;
+    }
+
+    .search-text p {
+        margin-left: 20px;
+        font-size: 25px;
+    }
+
+    .input, .submit {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title, .creator {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .search-text p {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .input, .submit {
+        width: 70%;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
+    .market-title h4 {
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    .m {
+        font-size: 16px;
+        width: 90%;
+    }
+
+    /* .m .change {
+        display: none;
+    } */
+}
